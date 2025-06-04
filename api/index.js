@@ -57,13 +57,12 @@ app.use("/api/config/paypal", (req, res) => {
 });
 
 
-module.exports = app;
 
 
 
-// app.listen(PORT || 9000, () => {
-//   console.log(`server listening on port ${PORT}`);
-// });
+app.listen(PORT || 9000, () => {
+  console.log(`server listening on port ${PORT}`);
+});
 
 
 
