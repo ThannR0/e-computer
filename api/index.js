@@ -23,6 +23,9 @@ mongoose
     err;
   });
 
+  app.use(cors({
+  origin: 'https://e-computer-dkmk-3amv6lgih-thans-projects-65d2f5b8.vercel.app'
+}));
 
 const databaseSeeder = require("./databaseSeeder");
 const userRoute = require("./routes/User");
@@ -57,9 +60,7 @@ app.use("/api/config/paypal", (req, res) => {
 });
 
 
-app.use(cors({
-  origin: 'https://e-computer-dkmk-3amv6lgih-thans-projects-65d2f5b8.vercel.app'
-}));
+
 
 
 app.listen(PORT || 9000, () => {
